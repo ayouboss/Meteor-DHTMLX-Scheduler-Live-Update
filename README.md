@@ -1,4 +1,4 @@
-Meteor DHTMLX Scheduler with Live Update
+Meteor Dhtmlx Scheduler with Live Update
 ====================================
 
 Updates automatically to all connected clients (autopublish and insecure packages removed)
