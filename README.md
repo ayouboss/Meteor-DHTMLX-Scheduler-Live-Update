@@ -3,8 +3,6 @@ Meteor DHTMLX Scheduler with Live Update
 
 Updates automatically to all connected clients
 
-DHTMLX Connector for Laravel framework
-======================================
 
 
 ####Include
