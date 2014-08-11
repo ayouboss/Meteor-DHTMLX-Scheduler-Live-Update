@@ -32,16 +32,16 @@ var  initScheduler = function () {
             });
 
 			scheduler.attachEvent("onEventAdded", function(id,ev){
-			 Meteor.call("insert", ev, function(error, event_id) {
-			});	
+			 	Meteor.call("insert", ev, function(error, event_id) {
+				});	
 			});
 			scheduler.attachEvent("onEventChanged", function(id,ev){
-				 Meteor.call("update", ev, function(error, event_id) {
-			});
+				Meteor.call("update", ev, function(error, event_id) {
+				});
 			});
 			scheduler.attachEvent("onEventDeleted", function(id){
-				 Meteor.call("delete", id, function(error, event_id) {
-			});	
+				Meteor.call("delete", id, function(error, event_id) {
+				});	
 			});
 };
 Template.scheduler.rendered = function(){
@@ -56,10 +56,9 @@ Template.scheduler.rendered = function(){
 	$.each( evs, function(i, e){
 	load[i] = {id:e._id,start_date:e.start_date,end_date:e.end_date,text:e.text} ;
 	});
-	//console.log(JSON.stringify(nodeNames));
 	scheduler.clearAll();
 	scheduler.parse(load, 'json');
-	});
+    });
       
 };
 
@@ -68,10 +67,6 @@ Template.scheduler.rendered = function(){
 ####Server.js (/app/server/server.js)
 
 ```sh
- Meteor.startup(function() {
-    // Session.set('data_loaded', false); 
-	//Meteor.events.remove({})
-  });
 Meteor.publish("jobs", function () {
 
     return Meteor.events.find({});
