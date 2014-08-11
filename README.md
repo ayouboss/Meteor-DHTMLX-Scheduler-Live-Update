@@ -7,9 +7,9 @@ Updates automatically to all connected clients (autopublish and insecure package
 
 ####Include
 
-  - imgs/ & /imgs_dhx_terrace in /app/public
-  - dhtmlxscheduler.css in /app/client/stylesheets
-  - dhtmlxscheduler.js in /app/client/lib
+  - imgs/ & imgs_dhx_terrace/ in /app/public/
+  - dhtmlxscheduler.css in /app/client/stylesheets/
+  - dhtmlxscheduler.js in /app/client/lib/
   
 
 ####Models.js (/app/models.js)
