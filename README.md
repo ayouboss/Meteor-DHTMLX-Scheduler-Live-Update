@@ -46,9 +46,7 @@ var  initScheduler = function () {
 };
 Template.scheduler.rendered = function(){
  
-    //console.log("not rendered");
     initScheduler();
-    this.rendered = true;
     Meteor.subscribe("jobs");
     Meteor.autorun(function(){
 	var evs = Meteor.events.find().fetch();
@@ -86,7 +84,7 @@ Meteor.methods({
             var event_id = Meteor.events.remove(id);
             return event_id;
         }
-    });
+});
 ```
 
 ####Scheduler.html (/app/scheduler.html)
