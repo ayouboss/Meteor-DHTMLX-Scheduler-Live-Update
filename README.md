@@ -1,7 +1,7 @@
 Meteor DHTMLX Scheduler with Live Update
 ====================================
 
-Updates automatically to all connected clients
+Updates automatically to all connected clients (autopublish and insecure packages removed)
 
 
 
