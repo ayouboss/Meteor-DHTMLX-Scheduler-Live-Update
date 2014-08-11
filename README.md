@@ -19,7 +19,7 @@ Updates automatically to all connected clients
 Meteor.events = new Meteor.Collection('events');
 ```
 
-####Client.js (/app/clients/client.js)
+####Client.js (/app/client/client.js)
 
 ```sh
 var  initScheduler = function () {
